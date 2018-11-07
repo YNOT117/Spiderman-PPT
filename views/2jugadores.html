@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="../assets/styles2Jugadores.css">
+  </head>
+  <body>
+
+    <aside class="">
+      <a href="../index.html">
+        <img class="imgMenu" src="../assets/img/telaraña_menu2.png">
+      </a>
+      <h4>Inicio</h4>
+    </aside>
+
+
+    <section class="sectionBody">
+
+      <main class="main">
+        <header>
+        </header>
+        <section>
+          <div class="jugador1">
+
+            <form class="modo" action="index.html" method="post">
+              <h1 id="textMain">Jugador 1</h1>
+              <div class="botones">
+                <label id="bt1" for="papel" class="papel">
+                  <img class="imgj1" src="../assets/img/papel.png">
+                </label>
+                <label id="bt1" for="piedra" class="piedra">
+                  <img id="tijeraID" class="imgj1" src="../assets/img/piedra.png">
+                </label>
+              </div>
+              <div class="botonesAbajo">
+                <label id="bt2" for="tijera" class="tijera">
+                  <img class="imgj1" src="../assets/img/tijera.png">
+                </label>
+              </div>
+              <input hidden id="papel" name="heroe" type="radio" value="papel">
+              <input hidden id="piedra" name="heroe" type="radio" value="piedra">
+              <input hidden id="tijera" name="heroe" type="radio" value="tijera">
+            </form>
+
+          </div>
+
+          <div class="jugador2 hidden">
+            <form class="modo" action="index.html" method="post">
+              <h1 id="textMain">Jugador 2</h1>
+              <div class="botones">
+                <label id="bt1" for="papel2" class="papel2">
+                  <img class="imgj1" src="../assets/img/papel.png">
+                </label>
+                <label id="bt1" for="piedra2" class="piedra2">
+                  <img class="imgj1" src="../assets/img/piedra.png">
+                </label>
+              </div>
+              <div class="botonesAbajo">
+                <label id="bt2" for="tijera2" class="tijera2">
+                  <img class="imgj1" src="../assets/img/tijera.png">
+                </label>
+              </div>
+              <input hidden id="papel2" name="villan" type="radio" value="papel">
+              <input hidden id="piedra2" name="villan" type="radio" value="piedra">
+              <input hidden id="tijera2" name="villan" type="radio" value="tijera">
+            </form>
+          </div>
+        </section>
+
+        <footer>
+
+        </footer>
+      </main>
+
+      <section class="results hidden">
+        <p class="resultsText"></p>
+      </section>
+
+    </section>
+    
+    <script src="../assets/scripts/scripts2.js"></script>
+  </body>
+</html>

@@ -1,0 +1,247 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+}
+
+@font-face {
+  font-family: sub;
+  src: url("fonts/Ailerons.otf");
+}
+
+aside{
+  width: 7%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("../assets/img/fondo_aside.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+aside h4{
+  font-family: sub;
+  font-size: 25px;
+  margin: 5px 0;
+  color: white;
+}
+
+.imgMenu{
+  width: 100%;
+  transition: transform .5s;
+}
+
+.imgMenu:hover{
+  transform: scale(1.2,1.2);
+}
+
+.sectionBody{
+  width: 93%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main{
+  width: 100%;
+  height: 100vh;
+  display: block;
+  background-image: url("img/fondoMaquina.jpg");
+  background-color: #FFFFFF;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.results{
+  width: 100%;
+  height: 100vh;
+}
+
+#textMain{
+  font-family: sub;
+  font-size: 55px;
+  color: white;
+}
+
+header{
+  height: 10%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.jugador1{
+  display: flex;
+  width: 50%;
+  height: 100%;
+}
+
+.jugador2{
+  display: flex;
+  width: 50%;
+  height: 100%;
+}
+
+.modo{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.botones{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+}
+
+.botonesAbajo{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+}
+
+#bt2{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  transform: translateY(-20px);
+  transition: transform .5s;
+}
+
+#bt1{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  transform: translateY(20px);
+  transition: transform .5s;
+}
+
+.imgj1{
+  margin: 0 0 5px 0;
+  height: 60px;
+  width: 60px;
+  transform: translateY(-5px);
+  border-radius: 40px;
+}
+#tijeraID{
+  width: 55px;
+  height: 55px;
+}
+#bt1:hover{
+  transform: translateY(10px);
+}
+#bt2:hover{
+  transform: translateY(-30px);
+}
+
+
+.modo label{
+  margin: 0 5px;
+}
+
+.abajo{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+label{
+  width: 150px;
+  height: 175px;
+  margin: 10px 0;
+  transition: transform .5s;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%, 50% 0);
+}
+
+.papel{
+  background-image: url("img/spiderman_secretwar.jpg");
+  background-size: cover;
+}
+
+
+
+
+.piedra{
+  background-image: url("img/spider_escarlata.jpg");
+  background-size: cover;
+}
+
+.tijera{
+  background-image: url("img/spiderman.jpg");
+  background-size: cover;
+}
+
+.papel2{
+  background-image: url("img/venom.jpg");
+  background-size: cover;
+}
+
+.piedra2{
+  background-image: url("img/dococ.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.tijera2{
+  background-image: url("img/duende.jpg");
+  background-size: cover;
+}
+
+
+
+.results{
+  width: 100%;
+  height: 100vh;
+  display: block;
+  background-image: url("img/SvsS.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.resultsText{
+  font-family: sub;
+  font-size: 60px;
+  color: white;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hidden{
+  display: none;
+}
+
+
+footer{
+  height: 10%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}

@@ -1,0 +1,156 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: spiderfont;
+  src: url("fonts/SpiderMan.ttf");
+}
+@font-face {
+  font-family: sub;
+  src: url("fonts/Ailerons.otf");
+}
+
+header {
+  margin: 10px 0 0 0;
+  font-family: spiderfont;
+  font-size: 30px;
+  color: #FFFFFF;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+}
+
+h1, h3, h4{
+  color: white;
+}
+
+.imgMenu{
+  transition: transform .5s;
+}
+
+.imgMenu:hover{
+  transform: scale(1.2,1.2);
+}
+
+aside{
+  width: 7%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("img/fondo_aside.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+aside img{
+  width: 100%;
+}
+
+aside h4{
+  font-family: sub;
+  font-size: 25px;
+  margin: 5px 0;
+}
+
+main{
+  width: 93%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-image: url("img/fondo2.png");
+  background-color: #000000;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 10%;
+}
+
+section{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 80%;
+}
+
+.modo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+form h1{
+  font-family: sub;
+  font-size: 40px;
+}
+
+label{
+  width: 175px;
+  height: 200px;
+  margin: 10px 0;
+  transition: transform .5s;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%, 50% 0);
+}
+
+label:hover {
+  transform: translateY(-6px);
+  /*transform: scale(1.1, 1.1);*/
+}
+
+
+.dosJugadores{
+  background-image: url("img/2jugadores.jpg");
+  background-position: center;
+  background-size: cover;
+  background-position: 50%;
+}
+.maquina{
+  background-image: url("img/maquina.jpg");
+  background-position: center;
+  background-size: cover;
+  background-position: 50%;
+}
+
+footer{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 15%;
+}
+
+a.textFooter{
+  text-decoration: none;
+  color: white;
+  transition: transform .5s;
+  font-family: sub;
+  font-size: 20px;
+}
+
+a.textFooter:hover{
+  transform: translate(10px, -4px) scale(1.2,1.2);
+}
+
+footer img{
+  width: 65px;
+  height: 100%;
+  transition: transform .5s;
+}
+
+footer img:hover{
+  transform: translate(-5px,-5px) scale(1.2,1.2);
+}
